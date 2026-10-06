@@ -1,0 +1,415 @@
+/*formatação da minha pagina*/
+*{
+    margin: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #030303;
+    color: #40688e;
+    line-height: 1.6
+}/**/
+
+ .cabecalho {
+    background-color: #2b2b2b;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #40688e;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo{
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navegacao {
+    display: flex;
+    gap: 35px;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    filter: brightness(0.75);
+}
+
+
+.links a {
+    text-decoration: none;
+    color: #40688e;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 8px;
+    transition: color 1s ease;
+}
+
+.redes-sociais a {
+    color: #40688e;
+    padding-left: 8px;
+    cursor: pointer;
+    transition: color 1s ease;
+}
+
+.redes-sociais a.whatsapp:hover {color: rgb(4, 223, 0);}
+.redes-sociais a.instagram:hover {color: #ff0040;}
+.redes-sociais a.facebook:hover {color: #1877f2;}
+.redes-sociais a.x:hover {color: #FFFFFF;}
+
+.menu a{
+    color: #40688e;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: color 0.6s ease;
+}
+
+.imagem {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.75);
+    opacity: 0.9;
+}
+
+
+.texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #022b51;
+}
+
+.texto p {
+    font-size: 16px;
+    text-shadow: 0 2px 8px #4080bd;
+    text-align: center;
+    color: #fffbed;
+}
+
+.texto h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 8px #4080bd;
+    color: #fffbed;
+}
+
+.titulo-secao{
+    text-align: center;
+    color: #40688e;
+    border-color: black;
+    font-size: 32;
+    margin-bottom: 5px;
+}
+
+
+.container{
+    max-width: 2000px;
+    margin: 40px auto;
+    padding: 0 20px;
+
+}
+
+.subtitulo{
+    color: #40688e;
+    text-align: center;
+    padding: 15px;
+}
+
+.nome{
+    color: #40688e;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.grad{
+    display: grid;
+    /* vai organizar todos os elementos (filhos) em linhas e colunas  */
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    /* pra deixar tudo na horizontal */
+    gap: 25px;
+}
+
+.poster{
+    width: 100%;
+    height: 390px;
+    object-fit: cover;
+}
+
+.card{
+    background-color: #1c2b38;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px #454545;
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px #40688e;
+}
+
+.preco{
+    font-size: 12px;
+    color: #40688e;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+.sinopse{
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 1.1;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+.preco{
+    margin: 10px;
+    font-size: 13px;
+    color: #0a6bc6;
+    text-decoration: uppercase;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.sessoes{
+    margin: 10px;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.botao-comprar{
+    margin: 10px;
+    display: block;
+    text-align: center;
+    background-color: #0088ff;
+    padding: 12px 0;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #104a81;
+
+}
+
+.horario{
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-left: 4px;
+    background-color: #030303;
+}
+
+.botao-comprar:hover{
+    background-color: #2b2b2b;
+}
+
+.area-inscricao{
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.coluna-form{
+    flex: 1;
+    min-width: 320px;
+    background-color: #1e3347;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px #0088ff;
+}
+
+.coluna-midia{
+    flex: 1;
+    min-height: 320px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.coluna-form label{
+    font-size: 14px;
+    font-weight: bold;
+    color: #4080bd;
+}
+
+.coluna-form input[type="text"],
+.coluna-form input[type="password"],
+.coluna-form input[type="email"],
+.coluna-form input[type="date"],
+.coluna-form input select{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    background-color: #174875;
+    border-radius: 5px;
+    color: #fffbed;
+    font-size: 14px;
+}
+
+.btn-enviar{
+    background-color: #174875;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fffbed;
+    box-shadow: 0 4px 12px #1c2b38;
+}
+
+.btn-limpar{
+    background-color: #174875;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fffbed;
+    box-shadow: 0 4px 12px #1c2b38;
+}
+
+.btn-enviar:hover{
+    background-color: #40688e;
+}
+
+.btn-limpar:hover{
+    background-color: #40688e;
+}
+
+
+.titulo {
+    font-size: 26px;
+    color: #40688e;
+    margin-bottom: 10px;
+    text-align: center;
+    align-items: center;    
+}
+
+.resumo{
+    margin: 20px;
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 1.1;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+.footer{
+    border-top: 2px solid #40688e;
+    background-color: #1c2b38;
+    height: 70px;
+    align-items: center;
+    text-align: center;
+    padding: 10px 14px;
+}
+
+.conteudo{
+    margin: 40px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: #1c2b38;
+}
+
+.grade{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+                                                        /*comentarios gerais*/                                          
+/*
+---------------------------------------------------------------cores-------------------------------------------------------------------
+
+cor vinho - #7f1734 
+cor legal - #fdfce5
+azul irado - #1c2b38
+azul escuro irado - #1e3347
+azul iraco claro - #0088ff
+azul iradamente irado - #40688e
+azul iradamente irado mais claro - #4080bd
+azul massa - #174875
+---------------------------------------------------------------códigos------------------------------------------------------------
+
+display: flex; ........................ eles passam a ficar na mesma fila
+justify-content: space-between; ....... coloca cada filho separado
+max-width ............................. largura maxima da tela
+margin ................................ margem
+grid .................................. organizar todos os elementos (filhos) em linhas e colunas
+border-radius.......................... arredonda as bordas
+overflow............................... corta e esconde qqr conteúdo que ultrapasse os limites
+gap.................................... espaçamento
+align-items: flex-start;............... alinha o topo de todas as colunas
+flex................................... faz o formulario crescer proporcionalmente
+font-weight: bold;..................... deixa a fonte em negrito
+cursor: pointer........................ a seta se transforma em mão
+text-transform: uppercase;............. deixa tudo em maiusculo
+text-transform: downcase;.............. deixa tudo em minusculo
+padding ............................... é uma "margem interna", garante que independente do tamanho da tela, tenha uma distancia minima da margem da tela
+    no padding, o primeir vai sempre ser o "y", por exemplo, ali está 0 20px, o 0 é de "cima", o 20 é de lado
+*/
+
+
+
+
+
+
+
+
+
+
+                                                        /*comentarios gerais*/
+/*
+--------------------------------------------------------------  cores  --------------------------------------------------------------
+
+cor vinho - #7f1734 
+cor legal - #fdfce5
+azul irado - #1c2b38
+azul escuro irado - #1e3347
+azul iraco claro - #0088ff
+azul iradamente irado - #40688e
+azul iradamente irado mais claro - #4080bd
+azul massa - #174875
+-------------------------------------------------------------  códigos  -------------------------------------------------------
+
+display: flex; ........................ eles passam a ficar na mesma fila
+justify-content: space-between; ....... coloca cada filho separado
+max-width ............................. largura maxima da tela
+margin ................................ margem
+grid .................................. organizar todos os elementos (filhos) em linhas e colunas
+border-radius.......................... arredonda as bordas
+overflow............................... corta e esconde qqr conteúdo que ultrapasse os limites
+gap.................................... espaçamento
+align-items: flex-start;............... alinha o topo de todas as colunas
+flex................................... faz o formulario crescer proporcionalmente
+font-weight: bold;..................... deixa a fonte em negrito
+cursor: pointer........................ a seta se transforma em mão
+text-transform: uppercase;............. deixa tudo em maiusculo
+text-transform: downcase;.............. deixa tudo em minusculo
+padding ............................... é uma "margem interna", garante que independente do tamanho da tela, tenha uma distancia minima da margem da tela
+    no padding, o primeir vai sempre ser o "y", por exemplo, ali está 0 20px, o 0 é de "cima", o 20 é de lado
+*/
